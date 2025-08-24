@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📌 Student Task Manager</h1>
+
+    <div class="task-form">
+      <input type="text" id="taskTitle" placeholder="e.g. Study, Revise, Gaming, ...">
+      <textarea id="taskNotes" placeholder="Write details/notes about this task..."></textarea>
+      <select id="taskCategory">
+        <option value="Academics">📚 Academics</option>
+        <option value="Creative">🎨 Creative</option>
+        <option value="Research">🧪 Research</option>
+        <option value="Music">🎵 Music</option>
+        <option value="Gaming">🎮 Gaming</option>
+        <option value="Chores">🏠 Chores</option>
+      </select>
+      <select id="taskPriority">
+        <option value="High">🔴 High</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Low">🟢 Low</option>
+      </select>
+      <input type="date" id="taskDate">
+      <input type="time" id="taskTime">
+      <button id="addTaskBtn">➕ Add Task</button>
+    </div>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+      <p id="progress-text">0% Completed</p>
+    </div>
+
+    <div id="taskList"></div>
+    <footer> Made by <b>Radha Pandey</b> </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
